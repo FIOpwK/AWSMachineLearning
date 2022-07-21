@@ -1,6 +1,14 @@
 # AWSMachineLearning
 Introduction to AWS Machine Learning Foundations
 
+# Learning Objectives
+- Differentiate between supervised learning and unsupervised learning.
+- Identify problems that can be solved with machine learning.
+- Describe commonly used algorithms including linear regression, logistic regression, and k-means.
+- Describe how training and testing works.
+- Evaluate the performance of a machine learning model using metrics.
+
+
 # Advice From the Experts
 Remember the following advice when training your model.
 
@@ -11,3 +19,4 @@ Remember the following advice when training your model.
 - Hyperparameters are settings on the model which are not changed during training but can affect how quickly or how reliably the model trains, such as the number of clusters the model should identify.
 
 - Be prepared to iterate.
+
