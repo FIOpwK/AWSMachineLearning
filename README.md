@@ -120,3 +120,11 @@ There are many different tools that can be used to evaluate a linear regression 
 - *Log loss* seeks to calculate how *uncertain* your model is about the predictions it is generating.
 
 - *Model Accuracy* is the fraction of predictions a model gets right.
+
+- *Bag of words* : A technique used to extract features from the text. It counts how many times a word appears in a document (corpus), and then transforms that information into a dataset.
+
+- *Data vectorization*: is a process that converts non-numeric data into a numerical format so that it can be used by a machine leaning model.
+
+- *Silhouette coefficient*: a score from -1 to 1 describing the clusters found during modeling. A score near zero indicates overlapping clusters, and scores less than zero indicate data points assigned to incorrect clusters. A score approaching 1 indicates successful identification of discrete non-overlapping clusters.
+
+- *Stop words*: A list of words removed by natural language processing tools when building your dataset. There is no single universal list of stop words used by all-natural language processing tools.
