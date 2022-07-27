@@ -128,3 +128,74 @@ There are many different tools that can be used to evaluate a linear regression 
 - *Silhouette coefficient*: a score from -1 to 1 describing the clusters found during modeling. A score near zero indicates overlapping clusters, and scores less than zero indicate data points assigned to incorrect clusters. A score approaching 1 indicates successful identification of discrete non-overlapping clusters.
 
 - *Stop words*: A list of words removed by natural language processing tools when building your dataset. There is no single universal list of stop words used by all-natural language processing tools.
+
+
+- *Reinforcement learning* : is characterized by a continuous loop where the *agent* interacts with an *environment* and measures the consequences of its actions
+
+- *Generative AI* : enables computers to learn the underlying pattern of a given problem and use this knowledge to generate new content from input (such as images, music, and text).
+
+- *AR-CNN*: the autoregressive convolutional neural network generative technique uses a U-Net architecture. 
+
+*Agent* : the piece of software you are training is called an agent. It makes decisions in an environment to reach a goal
+
+*Environment* : the environment is the surrounding area with which the agent interacts. 
+
+*Reward* : Feedback is given to an agent for each action it takes in a given state. This feedback is a numerical reward.
+
+*Action* : for every state, an agent needs to take an action towards achieving its goal.
+
+*Reward Functions* :
+    - Each state on the grid is assigned a score by your reward function. You incentivize behavior that supports your car's goal of completing fast laps by giving the highest numbers to the parts of the track on which you want it to drive.
+
+    - The reward function is the actual code you'll write to help your agent determine if the action is just took was good or bad, and how good or bad it was.
+
+    ```"""
+    def reward_function(params):
+    '''
+    Example of rewarding the agent to follow center line
+    '''
+    
+    # Read input parameters
+    track_width = params['track_width']
+    distance_from_center = params['distance_from_center']
+    
+    # Calculate 3 markers that are at varying distances away from the center line
+    marker_1 = 0.1 * track_width
+    marker_2 = 0.25 * track_width
+    marker_3 = 0.5 * track_width
+    
+    # Give higher reward if the car is closer to center line and vice versa
+    if distance_from_center <= marker_1:
+        reward = 1.0
+    elif distance_from_center <= marker_2:
+        reward = 0.5
+    elif distance_from_center <= marker_3:
+        reward = 0.1
+    else:
+        reward = 1e-3  # likely crashed/ close to off track
+    
+    return float(reward)
+    ```"""
+
+*Exploration* : when a car first starts out, it *explores* by wandering in random directions. However, the more training an agents gets, the more it learns about an environment. This experience helps it become more confident about the actions it chooses (later)
+
+*Exploitation* : means the car begins to exploit or use information from previous experiences to help it reach its goal. Different training algorithms utilize exploration and exploitation differently.
+
+*reward graph* :
+    - while training your car in the AWS DeepRacer console, your training metrics are displayed on a reward graph
+
+    - plotting the total reward from each episode allows you to see how the model performs over time. The more rewards your car gets, the better your model performs.
+
+# AWS and AWS AI devices
+Introduction to machine learning with AWS and AWS AI Devices: AWS DeepComposer and AWS DeepRacer
+
+# Learning Objectives
+
+    - Identify AWS machine learning offerings and undertand how different services are used for different applications.
+
+    - Describe how reinforcement learning works in the context of AWS DeepRacer.
+
+    - Explain the fundamentals of generative AI and its applications, and describe three famous generative AI models in the context of music and AWS DeepComposer. (AR-CNN technique, GANs technique, Transformers technique)
+
+
+
