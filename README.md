@@ -186,6 +186,14 @@ There are many different tools that can be used to evaluate a linear regression 
 
     - plotting the total reward from each episode allows you to see how the model performs over time. The more rewards your car gets, the better your model performs.
 
+*Generator*: A neural network that learns to create new data resembling the source data on which it was trained.
+
+*Discriminator*: A neural network trained to differentiate real vs synthetic data.
+
+*Generator loss*: Measures how far the output data deviates from the real data present in the training dataset.
+
+*Discriminator loss*: Evaluates how well the discriminator diffentiates real vs fake data
+
 # AWS and AWS AI devices
 Introduction to machine learning with AWS and AWS AI Devices: AWS DeepComposer and AWS DeepRacer
 
