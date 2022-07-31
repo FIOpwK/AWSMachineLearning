@@ -134,7 +134,7 @@ There are many different tools that can be used to evaluate a linear regression 
 
 - *Generative AI* : enables computers to learn the underlying pattern of a given problem and use this knowledge to generate new content from input (such as images, music, and text).
 
-- *AR-CNN*: the autoregressive convolutional neural network generative technique uses a U-Net architecture. 
+- *AR-CNN*: the autoregressive convolutional neural network generative technique uses a U-Net architecture. Makes iterative changes over time to create new data.
 
 *Agent* : the piece of software you are training is called an agent. It makes decisions in an environment to reach a goal
 
@@ -176,6 +176,8 @@ There are many different tools that can be used to evaluate a linear regression 
     
     return float(reward)
     ```"""
+
+- *Naive Bayes*: is a machine learning algorithm used to solve classification problems. 
 
 *Exploration* : when a car first starts out, it *explores* by wandering in random directions. However, the more training an agents gets, the more it learns about an environment. This experience helps it become more confident about the actions it chooses (later)
 
