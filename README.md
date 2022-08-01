@@ -134,6 +134,14 @@ There are many different tools that can be used to evaluate a linear regression 
 
 - *Generative AI* : enables computers to learn the underlying pattern of a given problem and use this knowledge to generate new content from input (such as images, music, and text).
 
+- *Generative Adversarial Network (GAN)*: consist of two networks constantly competing with each other. 
+    - Generator network that tries to generate data base on the data it was trained on.
+
+    - Discriminator network that is trained to differentiate between real data and data which is created by the generator.
+
+- *Binary classifier*: which means that the discriminator classifies inputs into two groups, "real" or "fake" data.
+
+
 - *AR-CNN*: the autoregressive convolutional neural network generative technique uses a U-Net architecture. Makes iterative changes over time to create new data.
 
 *Agent* : the piece of software you are training is called an agent. It makes decisions in an environment to reach a goal
