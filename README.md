@@ -630,4 +630,36 @@ The project on which you're working determines which of these is more important 
     ### Project Documentation
     Project documentation is essential for getting others to understand why and how your code is relevant to them, whether they are potential users of your project or developers who may contribute to your code. A great first step in project documentation is your README file. It will often be the first interaction most users will have with your project.
 
-    
+    Whether it's an application or a package, your project should absolutely come with a README file. At a minimum, this should explain what it does, list its dependencies, and provide sufficiently detailed instructions on how to use it. Make it as simple as possible for others to understand the purpose of your project and quickly get something working.
+
+    Translating all your ideas and thoughts formally on paper can be a little difficult, but you'll get better over time, and doing so makes a significant different in helping others realize the value of your project. Writing this documentation can also help you improve the design of your code, as you're forced to think through your design decisions more thoroughly. It also helps future contributors to follow your original intentions.
+
+    There is a full Udacity course on this topic
+
+
+# Version Control in Data Science
+Git VCS and branching.
+
+
+# Welcome to software engineering practices, part II
+In part 2 of software engineering practices, you'll learn about the following practices of software engineering and how they apply in data science.
+    - Testing
+    - Logging
+    - Code reviews
+
+# Testing
+    Testing your code is essential before deployment. It helps you catch errors and faulty conclusions before they make any major impact. Today, employers are looking for data scientists with skills to properly prepare their code for an industry setting, which includes testing their code.
+    ## Testing and data science
+        - Problems that could occur in data science aren't always easily detectable; you might have values being encoded incorrectly, features being used inappropriately, or unexpected data breaking assumptions.
+
+        - To catch these errors, you have to check for the quality and accuracy of your *analysis* in addition to the quality of your *code*. Proper testing is necessary to avoid unexpected surprises and have confidence in your results.
+
+        - Test-driven development(TDD): A development process in which you write tests for tasks before you even write the code to implement those tasks.
+
+        - Unit test: A type of test that covers a "unit" of code -- usually a single function -- independently from the rest of the program.'
+
+        # resources
+        Four Ways Data Science Goes Wrong and How Test-Driven Data Analysis Can Help: Blog Post
+        Ned Batchelder: Getting Started Testing: Slide Deck and Presentation Video
+
+        
