@@ -135,24 +135,32 @@ Which of the following problem statements fit the definition of a regression-bas
 ## Build a Dataset
 Understanding the data needed helps you select better models and algorithms so you can build more effective solutions.
 
-## Data collection
+The nest step in machine learning process is to build a dataset that can be used to solve your machine learning-base problem. Understanding the data
+needed helps you select better models and algorithms to build more effective solutions.
+
+### The most important step of the machine learning process
+Working with data is perhaps the most overlooked -- yet most important -- step of the machine learning process.
+
+# The Four Aspects of Working with Data
+
+## Data Collection
 Data collection can be as straightforward as running the appropriate SQL queries or as complicated as building customer web scraper applications to collect data for your project.
     - Does the data you've collected match the machine learning task and problem you have defined?
 
-## Data inspection
+## Data Inspection
 The quality of your data will ultimately be the largest factor that affects how well you can expect your model to perform. As you inspect your data, look for:
     - Outliers
     - Missing or incomplete values
     - Data that needs to be transformed or preprocessed so it's in the correct format to be used by your model
 
-## Summary statistics
+## Summary Statistics
 Models can assume your data is structured.
 
 Now that you have some data in hand it is a good best practice to check that your data is in line with the data underlying assumptions of your chosen machine learning model.
 
 With many statistical tools, you can calculate things like the mean, inner-quartile range (IQR), and standard deviation. These tools can give you insight into the *scope, scale,* and *shape* of the dataset.
 
-## Data visualization
+## Data Visualization
 You can use data visualization to see outliers and trends in your data to help stakeholders understand your data.
 
 
@@ -193,6 +201,41 @@ The end-to-end training process is:
     - Update the model parameters in the direction that reduces loss.
 
 You continue to cycle through these steps until you reach a predefined stop condition. This might be based on a training time, the number of training cycles, or an even more intelligent or application-aware mechanism.
+
+##########################################[CaseStudy:Toolmarks]###################################################
+# Case Study I
+### Category: Classification (labeled data)
+### ML Task: Supervised
+### Model: 
+### Data: (toolmark images, data reduction algorithms, product recommendations)
+
+### Analysis of Toolmarks
+bagofworks = [toolsmarks, 
+                toolmark examiner community, 
+                statistical methods for data reduction and analysis (of images), 
+                data reduction algorithms,
+                rules used by examiners for classification and association of toolmarks, 
+                critical toolmark match,
+                product recommendation,
+                manufacturing methods,
+                statistical analysis,
+
+                 ]
+
+## Problem Statement:
+    is the toolmark examiner community particularly accepting of manufacturing methods used to produce marks on tools that are substantially different from tool to tool? 
+
+    or...
+
+    at what level of difference between known matches and non-matches is acceptable in the toolmark examiner community? and does this influence product recommendations?
+
+## Data Collection
+        collection of digital images of toolmarks
+        produced by various 'tool manufacturing methods' on 'produced work-products' -- 
+
+        vs
+
+        the development of 'statistical methods for data reduction and analysis of images'
 
 
 ## Deep learning models
@@ -850,7 +893,7 @@ How does Scikit-learn train the SVM model? You don't need to know because the im
 In this lesson, you'll practice the fundamentals of object-oriented programming. By the end of the lesson, you'll have built a Python package using object-oriented programming.
 
 
-Lesson files
+### Lesson files
 This lesson uses classroom workspaces that contain all of the files and functionality you need. You can also find the files in the data scientist nanodegree term 2 GitHub repo.
 
 
