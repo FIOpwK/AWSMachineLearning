@@ -208,6 +208,61 @@ You continue to cycle through these steps until you reach a predefined stop cond
 ### ML Task: Supervised
 ### Model: 
 ### Data: (toolmark images, data reduction algorithms, product recommendations)
+### Overview statement of machine learning problem
+    This machine learning project wants to know if there is a relationship of product recommendations
+    for tools that have a lesser degree of toolmark difference that other tools with toolmarks.
+
+    Does it make sense to ask: "If this tool has a lesser degree of difference in toolmarks, will it get more recommendations?"
+    Or maybe we can say: "Predict the number of recommendations for a tool"
+
+    We feed our model this prediction
+    We have labeled data
+
+    We don't assume that because a tool as a specific or unique toolmarking that it will get more recommendations,
+    rather we want to predict if the toolmark variation from tool to tool increases, will the recommendations start to decrees.
+
+    The decrease in recommendations is not relative to the toolmark it-self
+    The toolmark does not influence the recommendation it-self
+
+    However,... It is our goal to see:
+        "Given a tool has "greater" variations in its toolmarkings 
+            - Can we predict the number of recommendations for that tool "
+
+        "Given a tool has "fewer" variations in its toolmarkings
+            - Can we predict the number of recommendations for that tool also "
+
+Example:
+    if a Hammer (in general sense) is produced that:
+        1: has a toolmark (From manufacturing methods)
+        2: has a 'low' variation of difference in this marking 'per tool'
+
+    predict # or level of Recommendation (in general sense) for this product will be:
+        1: high
+        2: low
+    
+    So:
+        Hammer: variation of difference = 0
+        Recommendation: high
+
+        vs
+
+        Hammer: variation of difference = 1
+        Recommendation: low
+
+        this is does not assume because the variation is high that it will get low recommendations, only that we predict recommendations will not be high
+
+        this also does not assume that because variation is low that it will get high recommendation, only that we predict recommendations will not be low
+
+        this also does not assume that because recommendations are in fact high, variation is the cause in any sense,
+        only that we predict high recommendations because we have samples of data to make projections with to conduct a study.
+
+        this study does assume that data reduction algorithms influence the level of variation,
+        and wager to one side (manufacturing method) more than the other due to level of acceptance in difference from the toolmark examiner community.
+
+
+
+    Our graph data contains (degree of difference in toolmarks (for specific tool?)) and (the number of recommendations (for specific tool?))
+
 
 ### Analysis of Toolmarks
 bagofworks = [toolsmarks, 
